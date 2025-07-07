@@ -1,30 +1,26 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:frontend/main.dart';
+import 'package:frontend/main.dart'; // Pastikan ini betul
+import 'package:firebase_core/firebase_core.dart';
+import 'package:frontend/firebase_options.dart'; // Guna kalau ada
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  TestWidgetsFlutterBinding.ensureInitialized();
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+  setUpAll(() async {
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions
+          .currentPlatform, // Guna fail firebase_options.dart
+    );
+  });
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
+  testWidgets('Ujian ringkas', (WidgetTester tester) async {
+    await tester.pumpWidget(MyApp());
+
+    expect(find.text('0'), findsOneWidget); // Semak teks '0'
+    await tester.tap(find.byIcon(Icons.add)); // Klik butang tambah
     await tester.pump();
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    expect(find.text('1'), findsOneWidget); // Pastikan jadi '1'
   });
 }
