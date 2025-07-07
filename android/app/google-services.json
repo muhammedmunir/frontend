@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "343871007275",
+    "firebase_url": "https://attendnce-staff-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "attendnce-staff",
+    "storage_bucket": "attendnce-staff.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343871007275:android:09bc6a4717065247f2d86e",
+        "android_client_info": {
+          "package_name": "com.example.frontend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343871007275-djk78486vm6orlih3c2cbem54jtpc60j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5I0ptL953255LGbC2XwRGIk5ea2WZhf8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343871007275-djk78486vm6orlih3c2cbem54jtpc60j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343871007275:android:5516f737baeee050f2d86e",
+        "android_client_info": {
+          "package_name": "com.example.frontend_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343871007275-djk78486vm6orlih3c2cbem54jtpc60j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5I0ptL953255LGbC2XwRGIk5ea2WZhf8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343871007275-djk78486vm6orlih3c2cbem54jtpc60j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
