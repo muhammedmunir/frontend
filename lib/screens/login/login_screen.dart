@@ -75,7 +75,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 const SizedBox(height: 50),
                 const Text(
-                  'Welcome to Attendance App',
+                  'Welcome to Attendance Apps',
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
